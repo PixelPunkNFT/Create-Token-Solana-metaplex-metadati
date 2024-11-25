@@ -15,7 +15,7 @@ npm install
 ```
 
 ## Run
-we will make a token mint account
+we will make a token  account
 
 ```bash
 solana-keygen grind --starts-with bos:1 
