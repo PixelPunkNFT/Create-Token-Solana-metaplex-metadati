@@ -21,7 +21,7 @@ we will make a token  account
 solana-keygen grind --starts-with bos:1 
 ```
 ```bash
-solana config set --keypair wallet-generate.json
+solana config set -ud -k bosH5JiVLKdNCEwBxpnyWRwFXAH9g6ekbzwL5Rt1nRF.json
 ```
 
 Let's create one more address that we will use for our Mint Account - the factory that makes our specific token. We'll make it start with mnt to help us remember it's the token mint account.
@@ -35,7 +35,7 @@ solana-keygen grind --starts-with mnt:1
 We will use our mnt... address as the token mint account for our new token:
 
 ```bash
-spl-token create-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb --enable-metadata MINT-WALLET.json
+spl-token create-token mntEU6strb8p1HSPUkqrB1bn34spdZzCEQRV1hU7KjC.json
 ```
 ## We created a wallet account address, a mint address, and minted the token without metadata. The next step will be to upload the metadata using Metaplex.
 
