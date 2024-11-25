@@ -14,21 +14,7 @@ Create custom SPL tokens on Solana blockchain with Metaplex metadata using TypeS
 npm install @solana/web3.js @metaplex-foundation/js
 ```
 
-## Token Creation Script
-```typescript
-import { createToken } from './tokenCreation';
 
-async function main() {
-  const token = await createToken({
-    name: "Your Token Name",
-    symbol: "TOKEN",
-    decimals: 9,
-    metadata: {
-      uri: "https://example.com/token-metadata.json"
-    }
-  });
-}
-```
 
 ## Metadata JSON Structure
 ```json
